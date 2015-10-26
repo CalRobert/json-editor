@@ -6073,7 +6073,7 @@ JSONEditor.AbstractTheme = Class.extend({
   },
   getCheckboxLabel: function(text) {
     var el = this.getFormInputLabel(text);
-    el.className = 'jse-CheckboxLabel';
+    el.style.fontWeight = 'normal';
     return el;
   },
   getHeader: function(text) {
