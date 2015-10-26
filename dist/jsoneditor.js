@@ -6066,8 +6066,9 @@ JSONEditor.AbstractTheme = Class.extend({
   enableLabel: function(label) {
     label.className = '';
   },
-  getFormInputLabel: function(text) {
+  getFormInputLabel: function(text, required) {
     var el = document.createElement('label');
+    if (required) el.className += 'required';
     el.appendChild(document.createTextNode(text));
     return el;
   },
