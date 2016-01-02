@@ -68,7 +68,8 @@ JSONEditor.defaults.editors.customObject = JSONEditor.defaults.editors.object.ex
       this.addproperty_list.setAttribute('class', 'property-selector');
       this.addproperty_add = this.getButton('add','add','add');
       this.addproperty_input = this.theme.getFormInputField('text');
-      this.addproperty_input.setAttribute('placeholder','Property name...');
+      // Change to "app name" or "link name", etc.
+      this.addproperty_input.setAttribute('placeholder', /*this.getTitle() + */'Name...');
       this.addproperty_input.style.width = '220px';
       this.addproperty_input.style.marginBottom = '0';
       this.addproperty_input.style.display = 'inline-block';
@@ -184,7 +185,7 @@ JSONEditor.defaults.editors.customObject = JSONEditor.defaults.editors.object.ex
       // Object Properties Button
       // getButton: function(text, icon, title) {
       // Just changing button text to "edit" for now
-      this.addproperty_button = this.getButton('Edit','edit','Edit');
+      this.addproperty_button = this.getButton('Edit','edit','Edit ' + this.getTitle());
       this.addproperty_button.addEventListener('click',function(e) {
         e.preventDefault();
         e.stopPropagation();
