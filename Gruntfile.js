@@ -8,6 +8,10 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
+          'dist/jsoneditor.css': [
+              // Just copy from src for now
+              'src/jsoneditor.css'
+            ],
           'dist/jsoneditor.js': [
 
             // License & version info, start the containing closure
