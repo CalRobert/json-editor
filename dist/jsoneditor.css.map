@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "jsoneditor.css",
+  "sources": [
+    "src/jsoneditor.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA;AACA,C",
+  "sourcesContent": [
+    "body {\n\n}"
+  ]
+}
