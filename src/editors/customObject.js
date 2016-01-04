@@ -184,8 +184,7 @@ JSONEditor.defaults.editors.customObject = JSONEditor.defaults.editors.object.ex
 
       // Object Properties Button
       // getButton: function(text, icon, title) {
-      // Just changing button text to "edit" for now
-      this.addproperty_button = this.getButton('Edit','edit','Edit ' + this.getTitle());
+      this.addproperty_button = this.getButton('Edit ' + this.getTitle(),'edit','Edit ' + this.getTitle());
       this.addproperty_button.addEventListener('click',function(e) {
         e.preventDefault();
         e.stopPropagation();
