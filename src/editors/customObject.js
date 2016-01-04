@@ -174,7 +174,7 @@ JSONEditor.defaults.editors.customObject = JSONEditor.defaults.editors.object.ex
       this.editjson_controls.appendChild(this.editjson_button);
       this.editjson_controls.appendChild(this.editjson_holder);
 
-      // Edit JSON Buttton disabled
+      // Edit JSON Button disabled
       if(this.schema.options && typeof this.schema.options.disable_edit_json !== "undefined") {
         if(this.schema.options.disable_edit_json) this.editjson_button.style.display = 'none';
       }
